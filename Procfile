@@ -1,0 +1,1 @@
+web: gunicorn avtc:avtc_back
