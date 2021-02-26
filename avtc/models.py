@@ -20,9 +20,15 @@ class Artist(models.Model):
     name = models.CharField(max_length=50)
     profile_image = models.ImageField(
         null=True, blank=True, upload_to=profile_image_directory_path)
-    bio = models.CharField(max_length=500)
+    job_title = models.CharField(max_length=50, default="Tattoo Artist")
+    specialty_one = models.CharField(max_length=50, blank=True)
+    specialty_two = models.CharField(max_length=50, blank=True)
+    specialty_three = models.CharField(max_length=50, blank=True)
+    bio = models.CharField(max_length=250)
     instagram = models.URLField(
         max_length=500, default="https://www.instagram.com/avtckenosha/")
+    facebook = models.URLField(
+        max_length=500, default="https://www.facebook.com/avtatco")
     slug = models.CharField(max_length=100, blank=False,
                             unique=True, primary_key=True)
 

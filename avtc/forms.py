@@ -7,7 +7,7 @@ class ArtistForm(forms.ModelForm):
     class Meta:
         model = Artist
         fields = ('name', 'profile_image', 'bio',
-                  'instagram', 'slug', 'art_pieces')
+                  'instagram', 'slug', 'art_pieces', 'job_title', 'specialty_one', 'specialty_two', 'specialty_three')
 
 
 class ArtForm(forms.ModelForm):
