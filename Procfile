@@ -1,1 +1,1 @@
-web: gunicorn avtc:avtc_back
+web: gunicorn avtc:avtc
