@@ -13,9 +13,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 import environ
-import django_heroku
-import dj_database_url
-from decouple import config
 
 env = environ.Env(
     # set casting, default value
@@ -65,7 +62,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middlewar.WhiteNoiseMiddleWare'
 ]
 
 ROOT_URLCONF = 'avtc_back.urls'
@@ -153,12 +149,9 @@ AWS_DEFAULT_ACL = 'public-read'
 
 
 STATIC_URL = '/static/'
-# STATICFILE_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_FILE_STORAGE = 'avtc_back.storages.MediaStore'
 
 # MEDIA_URL = '/media/'
 
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-django_heroku.settings(locals())
