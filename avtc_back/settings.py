@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 import environ
+import django_heroku
 
 env = environ.Env(
     # set casting, default value
@@ -155,3 +156,4 @@ DEFAULT_FILE_STORAGE = 'avtc_back.storages.MediaStore'
 # MEDIA_URL = '/media/'
 
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+django_heroku.setting(locals())
