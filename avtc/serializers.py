@@ -19,14 +19,14 @@ class ArtistSerializer(serializers.ModelSerializer):
     class Meta:
         model = Artist
         fields = ('name', 'profile_image', 'bio',
-                  'instagram', 'art_pieces', 'slug', 'job_title', 'specialty_one', 'specialty_two', 'specialty_three')
+                  'instagram', 'art_pieces', 'slug')
 
 
 class ArtistDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = Artist
         fields = ('name', 'profile_image', 'bio',
-                  'instagram', 'art_pieces', 'slug', 'job_title', 'specialty_one', 'specialty_two', 'specialty_three')
+                  'instagram', 'art_pieces', 'slug')
         slug_field = 'slug'
 
 
