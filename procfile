@@ -1,1 +1,1 @@
-web: gunicorn avtc_django.wsgi
+web: gunicorn avtc_back_django.wsgi
