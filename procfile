@@ -1,1 +1,1 @@
-web: gunicorn avtc.wsgi
+web: gunicorn avtcback.wsgi
