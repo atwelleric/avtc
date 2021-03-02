@@ -156,4 +156,4 @@ DEFAULT_FILE_STORAGE = 'avtc_back.storages.MediaStore'
 # MEDIA_URL = '/media/'
 
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-django_heroku.setting(locals())
+# django_heroku.setting(locals())
