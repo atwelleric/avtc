@@ -114,3 +114,4 @@ settings.sql
 # **/migrations/**
 # !**/migrations
 # !**/migrations/__init__.py
+Pipfile.lock
